@@ -5,8 +5,8 @@ import { PassportModule } from '@nestjs/passport';
 import { JwtModule } from '@nestjs/jwt';
 
 import { AuthService, AUTH_SERVICE, AUTH_MC_CLIENT } from './auth.service';
-import { JwtAuthGuard } from './jwt-auth.guard';
-import { JwtStrategy } from './jwt.strategy';<<<<<JWT
+import { JwtAuthGuard } from './guard/jwt-auth.guard';
+import { JwtStrategy } from './strategy/jwt.strategy';<<<<<JWT
 >>>>>APIKEY
 import { ApiKeyStrategy } from './strategy/apikey.strategy';
 <<<<<APIKEY

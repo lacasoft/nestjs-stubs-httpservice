@@ -5,7 +5,7 @@ import { DatabaseModule } from './database/database.module';
 import { HealthIndicator } from './health/health';
 import { AppController } from './app.controller';
 import { validationSchema } from './utils/environment.validations';
-import { ApiKeyStrategy } from './auth/apikey.strategy';
+import { ApiKeyStrategy } from './auth/strategy/apikey.strategy';
 import { AuthMiddleware } from './middleware/auth.middleware';
 import { AuthModule } from './auth/auth.module';
 

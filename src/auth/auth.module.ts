@@ -8,7 +8,7 @@ import { AuthService, AUTH_SERVICE, AUTH_MC_CLIENT } from './auth.service';
 import { JwtAuthGuard } from './jwt-auth.guard';
 import { JwtStrategy } from './jwt.strategy';<<<<<JWT
 >>>>>APIKEY
-import { ApiKeyStrategy } from './apikey.strategy';
+import { ApiKeyStrategy } from './strategy/apikey.strategy';
 <<<<<APIKEY
 
 @Global()

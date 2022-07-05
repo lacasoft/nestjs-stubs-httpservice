@@ -9,7 +9,7 @@ import { AuthGuard } from '@nestjs/passport';
 import { ExtractJwt } from 'passport-jwt';
 import { Reflector } from '@nestjs/core';
 
-import { AuthService, AUTH_SERVICE } from './auth.service';
+import { AuthService, AUTH_SERVICE } from '../auth.service';
 
 // Constante para declara publica una ruta
 export const IS_PUBLIC_KEY = 'isPublic';
@@ -21,7 +21,7 @@ export class JwtAuthGuard extends AuthGuard('jwt') {
 
   constructor(
     private reflector: Reflector,
-    @Inject(AUTH_SERVICE) private authService: AuthService,
+    @Inject(AUTH_SERVICE) private authService: AuthService
   ) {
     super();
   }
